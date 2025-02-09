@@ -1,10 +1,11 @@
 <?php
-use App\Http\Controllers\GreetController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GreetController;
 
-
-Route::get('/', function () {
-    return view('Welcome');
+// Route 1: Simple message
+Route::get('/hello', function () {
+    return 'Hello, Laravel!';
 });
 
-Route::get('/',  [GreetController::class, 'show']);
+// Route 2: Call GreetController to return a Blade view
+Route::get('/greet', [GreetController::class, 'show']);
