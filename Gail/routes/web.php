@@ -15,6 +15,6 @@ Route::get('/greet', [GreetController::class, 'show']);
 Route::resource('tasks', TaskController::class);
 
 //Tailwindcss
-Route:: get('/',  function(){
-    return view('app');
+Route::get('/', function(){
+    return view('welcome');
 });

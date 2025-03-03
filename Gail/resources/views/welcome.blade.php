@@ -5,6 +5,7 @@ php<!DOCTYPE html>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Laravel</title>
+        <h1 class="text-4xl font-bold text-blue-500">Tailwind is working!</h1>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
