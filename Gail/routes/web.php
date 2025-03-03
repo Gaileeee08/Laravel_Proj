@@ -13,3 +13,8 @@ Route::get('/greet', [GreetController::class, 'show']);
 
 // Route 3: Task Controller
 Route::resource('tasks', TaskController::class);
+
+//Tailwindcss
+Route:: get('/',  function(){
+    return view('app');
+});
